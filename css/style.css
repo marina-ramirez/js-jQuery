@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background-color: indigo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navWrapper{
+    position: fixed;
+    top:40px;;
+    right: 0;
+    height: 200px;
+    width: 100px;
+    background-color: royalblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    color: white;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.dropDownMenu {
+    height: 100%;
+    width: 40px;
+    background-color: forestgreen;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+}
+
+p {
+    font-size: 50pt;
+}
+.button{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clickButton {
+    height: 64px;
+    width: 192px;
+    font-size: 30pt;
+}
+
+.popUp {
+    height:100%;
+    width:100%;
+    background-color:yellow;
+    position:absolute;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.section1{
+    height: 100%;
+    background-color: green;
+}
+
+.section2{
+    height: 100%;
+    background-color: blue;
+}
+
+.section3{
+    height: 100%;
+    background-color: purple;
+}
+.toggle{
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .dropDownMenu{
+        display: none;
+    }
+    .navWrapper{
+        height: 100%;
+        position: relative;
+        width: 100%;
+        background-color: transparent;
+        flex-direction: row;
+        top: 0;
+    }
+}
